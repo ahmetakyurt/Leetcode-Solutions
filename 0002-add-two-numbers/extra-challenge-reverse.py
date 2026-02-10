@@ -4,6 +4,9 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    """
+    This challenge version returns reversed LinkedList of the normal expected one
+    """
     def reverse(self, head):
         prev = None
         curr = head
