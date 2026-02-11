@@ -18,14 +18,12 @@ class Solution:
                     current = current.next
                     list1 = list1.next 
             elif list1:
-                while list1:
-                    current.next = list1
-                    current = current.next
-                    list1 = list1.next 
+                current.next = list1
+                break
+
             elif list2:
-                while list2:
-                    current.next = list2
-                    current = current.next
-                    list2 = list2.next 
+                current.next = list2
+                break
+                    
 
         return sortedList.next
