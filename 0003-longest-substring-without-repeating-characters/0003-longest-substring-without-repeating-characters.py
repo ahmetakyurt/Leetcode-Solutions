@@ -8,8 +8,6 @@ class Solution:
                 currentWindow = currentWindow[currentWindow.index(char) +1:]
 
             currentWindow += char
-            print(currentWindow)
-
             maxLength = max(maxLength, len(currentWindow))
 
         return maxLength
