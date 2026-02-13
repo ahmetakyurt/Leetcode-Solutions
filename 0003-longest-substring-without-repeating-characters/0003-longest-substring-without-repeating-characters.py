@@ -1,16 +1,20 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        currentWindow = ""
-        maxLength = 0
-        for char in s:
+        charIndexes = [-1] * 128
+        left = 0
+        maxLength = 1 if len(s) == 1 else 0
+
+        for index, char in enumerate(s):
+            if (charIndexes[ord(char)]) >= left:
+                left = charIndexes[ord(char)] + 1
             
-            if char in currentWindow:
-                currentWindow = currentWindow[currentWindow.index(char) +1:]
+            charIndexes[ord(char)] = index
 
-            currentWindow += char
-            maxLength = max(maxLength, len(currentWindow))
-
+            maxLength = max(maxLength, index - left + 1)
+    
         return maxLength
+
+
 
             
 
