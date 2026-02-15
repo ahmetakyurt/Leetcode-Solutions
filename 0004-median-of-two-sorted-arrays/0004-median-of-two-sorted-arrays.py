@@ -1,4 +1,3 @@
-import statistics
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         m = len(nums1)
@@ -8,14 +7,18 @@ class Solution:
         left = 0
         right = n
 
-        while nums2 and nums1:
-            if nums1[0] < nums2[0]:
-                sortedList.append(nums1.pop(0))
-            else:
-                sortedList.append(nums2.pop(0))
 
-        sortedList.extend(nums1)
-        sortedList.extend(nums2)
+        p1, p2 = 0, 0
+        while p1 < m and p2 < n:
+            if nums1[p1] < nums2[p2]:
+                sortedList.append(nums1[p1])
+                p1 += 1
+            else:
+                sortedList.append(nums2[p2])
+                p2 += 1
+
+        sortedList.extend(nums1[p1:])
+        sortedList.extend(nums2[p2:])
         sum = n+m
         print(sortedList)
         if (n+m) % 2 == 0:
