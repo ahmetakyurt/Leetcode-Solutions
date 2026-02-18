@@ -1,36 +1,31 @@
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        # Her zaman daha kısa olan dizi üzerinde binary search yapalım (Verimlilik için)
-        A, B = nums1, nums2
-        total = len(A) + len(B)
-        half = total // 2
+    def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
+        n1, n2 = len(nums1), len(nums2)
         
-        if len(B) < len(A):
-            A, B = B, A
+        # Binary search'ü her zaman kısa olan dizi (nums2) üzerinde yapıyoruz
+        if n1 < n2:
+            return self.findMedianSortedArrays(nums2, nums1)
+        
+        lo, hi = 0, n2 * 2
+        while lo <= hi:
+            mid2 = (lo + hi) // 2
+            mid1 = n1 + n2 - mid2
             
-        l, r = 0, len(A) - 1
-        while True:
-            # i: A dizisindeki kesim noktası (index)
-            # j: B dizisindeki kesim noktası
-            i = (l + r) // 2 
-            j = half - i - 2 # -2 çünkü indeksler 0'dan başlıyor
+            # (mid-1)//2 formülü sanal indekslerden gerçek indekslere geçişi sağlar
+            l1 = float('-inf') if mid1 == 0 else nums1[(mid1 - 1) // 2]
+            l2 = float('-inf') if mid2 == 0 else nums2[(mid2 - 1) // 2]
             
-            # Kenar durumları (Sınırları aşarsak eksi/artı sonsuz varsayıyoruz)
-            Aleft = A[i] if i >= 0 else float("-infinity")
-            Aright = A[i + 1] if (i + 1) < len(A) else float("infinity")
-            Bleft = B[j] if j >= 0 else float("-infinity")
-            Bright = B[j + 1] if (j + 1) < len(B) else float("infinity")
+            r1 = float('inf') if mid1 == n1 * 2 else nums1[mid1 // 2]
+            r2 = float('inf') if mid2 == n2 * 2 else nums2[mid2 // 2]
             
-            # Doğru kesim noktasını bulduk mu?
-            if Aleft <= Bright and Bleft <= Aright:
-                # Toplam eleman sayısı tek ise
-                if total % 2:
-                    return min(Aright, Bright)
-                # Toplam eleman sayısı çift ise
-                return (max(Aleft, Bleft) + min(Aright, Bright)) / 2
-            
-            # Kesim noktasını kaydır
-            elif Aleft > Bright:
-                r = i - 1
+            if l1 > r2:
+                # nums1'in sol tarafı çok büyük, mid1'i küçültmek için mid2'yi büyüt
+                lo = mid2 + 1
+            elif l2 > r1:
+                # nums2'in sol tarafı çok büyük, mid2'yi küçült
+                hi = mid2 - 1
             else:
-                l = i + 1
+                # Doğru kesim noktasındayız
+                return (max(l1, l2) + min(r1, r2)) / 2.0
+        
+        return -1.0
