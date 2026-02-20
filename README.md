@@ -8,6 +8,7 @@ My leetcode solutions
 | ------- |
 | [0001-two-sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
+| [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 ## Hash Table
@@ -15,12 +16,14 @@ My leetcode solutions
 | ------- |
 | [0001-two-sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0141-linked-list-cycle](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0217-contains-duplicate](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0242-valid-anagram) |
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0242-valid-anagram) |
 ## Linked List
@@ -46,6 +49,7 @@ My leetcode solutions
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0242-valid-anagram) |
 ## Sliding Window
 |  |
