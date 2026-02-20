@@ -9,6 +9,7 @@ My leetcode solutions
 | [0001-two-sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0217-contains-duplicate](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
+| [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 ## Hash Table
 |  |
 | ------- |
