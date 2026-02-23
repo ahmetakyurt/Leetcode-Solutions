@@ -1,15 +1,19 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        myDict = dict()
-        for number in nums:
-            myDict[number] = myDict.get(number, 0) + 1
-        
+        myDict = {}
+        for num in nums:
+            myDict[num] = 1 + myDict.get(num, 0)
+
+        bucket = [[] for i in range(len(nums) +1 )]
+
+        print(myDict)
+        for num, count in myDict.items():
+            bucket[count].append(num)
+
         ans = []
-        maxCount = max(myDict.values())
-        while len(ans) < k:
-            for key, value in myDict.items():
-                if value == maxCount:
-                    ans.append(key)
-                    myDict[key] = -1
-            maxCount = max(myDict.values())
-        return ans
+        for node in range(len(bucket) - 1, 0, -1):
+            for number in bucket[node]:
+                ans.append(number)
+
+                if len(ans) == k:
+                    return ans
