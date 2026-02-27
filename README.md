@@ -10,6 +10,7 @@ My leetcode solutions
 | [0004-median-of-two-sorted-arrays](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
+| [0238-product-of-array-except-self](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 ## Hash Table
@@ -83,4 +84,8 @@ My leetcode solutions
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0347-top-k-frequent-elements) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
