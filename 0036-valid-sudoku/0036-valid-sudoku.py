@@ -3,8 +3,6 @@ class Solution:
         rows = [set() for n in range(9)]
         columns = [set() for n in range(9)]
         blocks = [[set() for _ in range(3)] for i in range(3)]
-        for row in board:
-            print(row)
         for i in range(9):
             for j in range(9):
                 if board[i][j] == ".":
