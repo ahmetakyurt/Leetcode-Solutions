@@ -8,6 +8,7 @@ My leetcode solutions
 | ------- |
 | [0001-two-sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
+| [0015-3sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0128-longest-consecutive-sequence) |
@@ -31,6 +32,7 @@ My leetcode solutions
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0242-valid-anagram) |
@@ -53,6 +55,7 @@ My leetcode solutions
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0015-3sum) |
 | [0125-valid-palindrome](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ahmetakyurt/Leetcode-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
